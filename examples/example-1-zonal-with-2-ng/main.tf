@@ -18,7 +18,7 @@ module "kube" {
       node_memory = 16
       node_cores  = 4
       fixed_scale = {
-        size = 6
+        size = 3
       }
       node_locations   = [
         {
