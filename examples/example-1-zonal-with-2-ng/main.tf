@@ -15,8 +15,10 @@ module "kube" {
   node_groups = {
     "yc-k8s-ng-c" = {
       description = "Группа узлов в зоне С"
+      node_memory = 16
+      node_cores  = 4
       fixed_scale = {
-        size = 3
+        size = 6
       }
       node_locations   = [
         {
